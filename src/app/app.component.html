@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Pokédex</h1>
+  <img [src]="imageSrc()" [alt]="name()">
+  <h1>{{name()}}</h1>
+  <h1>Point de vie: {{size()}}</h1>
+
+  <p>Points de vie: {{life()}}</p>
+
+  <div class="buttons">
+    <button (click)="incrementLife()">+</button>
+    <button (click)="decrementLife()">-</button>
+  </div>
+</div>
+
