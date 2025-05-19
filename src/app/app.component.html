@@ -7,8 +7,8 @@
   <p>Points de vie: {{life()}}</p>
 
   <div class="buttons">
-    <button (click)="incrementLife()">+</button>
-    <button (click)="decrementLife()">-</button>
+    <button (click)="incrementLife()" [disabled]="life () >= 30">+</button>
+    <button (click)="decrementLife()"[disabled]="life () <= 10">-</button>
   </div>
 </div>
 
